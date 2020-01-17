@@ -11,9 +11,8 @@
 # adapted from https://hub.docker.com/r/larryli/esp-idf-ci-env/dockerfile
 #
 # TODO: 
-# - python3 (currently Python 2.7.17)
+# - python3 (currently Python 2.7.17) Note ubuntu comes with python 2.  It's not clear how to make python3 only.
 # - latest toolchain?
-# - enable idf.py menuconfig.  Put $IDF_PATH/tools in path?
 
 FROM ubuntu:18.04
 MAINTAINER Todd Flanders todd.a.flanders@accenture.com
