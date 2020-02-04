@@ -28,6 +28,6 @@ RUN mkdir -p /opt/local/espressif/ \
 RUN git clone -b release/v3.3 --depth 1 --recursive https://github.com/espressif/esp-idf.git $IDF_PATH \
     && cd $IDF_PATH && git submodule foreach --recursive 'git gc --aggressive --prune=all'
 RUN python -m pip install --user -r $IDF_PATH/requirements.txt
-RUN mkdir /root/cmake && cd /root/cmake && wget https://cmake.org/files/v3.7/cmake-3.7.2-Linux-x86_64.sh && chmod +x ./cmake-3.7.2-Linux-x86_64.sh && ./cmake-3.7.2-Linux-x86_64.sh --skip-license
+RUN mkdir /root/cmake && cd /root/cmake && wget https://cmake.org/files/v3.16/cmake-3.16.0-Linux-x86_64.sh && chmod +x ./cmake-3.16.0-Linux-x86_64.sh && ./cmake-3.16.0-Linux-x86_64.sh --skip-license
 
 
