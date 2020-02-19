@@ -5,7 +5,7 @@
 docker container run -it -v$(pwd):/workdir --rm toddflanders/esp-idf4-tdd bash
 ```
 
-## to build the docker file locally
+## to build the docker file locally (from within the esp-idf4-tdd directory)
 ```
 docker build . -t esp-idf4-tdd:latest
 ```
